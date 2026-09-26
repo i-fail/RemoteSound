@@ -1,0 +1,16 @@
+:root { font-family: system-ui, sans-serif; color-scheme: light dark; }
+* { box-sizing: border-box; }
+body { margin: 16px; }
+main { display: grid; gap: 16px; max-width: 520px; }
+[hidden] { display: none !important; }
+button, input { font: inherit; }
+button { min-height: 44px; padding: 8px 16px; cursor: pointer; touch-action: manipulation; overflow-wrap: anywhere; max-width: 100%; }
+button:disabled { cursor: default; }
+:focus-visible { outline: 2px solid Highlight; outline-offset: 3px; }
+#listener, #controller { display: grid; justify-items: start; gap: 12px; }
+#sounds { display: flex; flex-wrap: wrap; gap: 8px; min-width: 0; }
+.volume { display: flex; align-items: center; gap: 8px; max-width: 100%; }
+.volume input { width: 140px; min-width: 0; }
+.volume output { min-width: 4ch; }
+#connection, #device-count, #activity { font-size: 14px; overflow-wrap: anywhere; }
+#activity:empty { display: none; }

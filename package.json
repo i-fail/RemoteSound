@@ -1,0 +1,17 @@
+{
+  "name": "remote-sound",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/server.ts",
+    "start": "bun src/server.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "test:browser": "node --experimental-strip-types scripts/test-browser.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.8",
+    "playwright": "^1.63.0",
+    "typescript": "^5.9.3"
+  }
+}

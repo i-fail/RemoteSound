@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Remote Sound</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./app.ts"></script>
+  </head>
+  <body>
+    <main>
+      <div id="connection" role="status">Connecting…</div>
+      <section id="listener" aria-label="Listener">
+        <button id="enable" disabled>Enable sound</button>
+        <label class="volume">Volume <input id="volume" type="range" min="0" max="100" value="80" /><output id="volume-value" for="volume">80%</output></label>
+      </section>
+      <section id="controller" hidden aria-label="Sound controls">
+        <div id="device-count" role="status">0 devices ready</div>
+        <div id="sounds"></div>
+      </section>
+      <div id="activity" role="status"></div>
+    </main>
+  </body>
+</html>
